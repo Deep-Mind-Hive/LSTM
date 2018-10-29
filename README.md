@@ -71,3 +71,24 @@ The symbols used here have following meaning:
 
 
   * A quick tutorial on [LSTM](https://www.youtube.com/watch?v=9zhrxE5PQgY) 
+
+## 5. Simple Example
+A simple example for lstm is [lstm.py](https://github.com/Deep-Mind-Hive/LSTM/blob/master/lstm.py)
+We are using keras framework to demonstrate how to build LSTM sequential network
+
+1. First we have to import all the dependencies 
+    
+    from keras.models import Sequential \n
+    from keras.layers import LSTM, Dense \n
+    import numpy as np
+    
+2. define your data dimension, timesteps, number of classes and batch size
+
+        data_dim = 16
+        timesteps = 8
+        num_classes = 10
+        batch_size = 32
+
+3. Building model
+  1. create the instance of the sequential model
+  2. on that instance add a LSTM layer with 
