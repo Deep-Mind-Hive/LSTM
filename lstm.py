@@ -32,3 +32,4 @@ y_val = np.random.random((batch_size * 3, num_classes))
 model.fit(x_train, y_train,
           batch_size=batch_size, epochs=5, shuffle=False,
           validation_data=(x_val, y_val))
+ 
