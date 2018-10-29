@@ -53,3 +53,17 @@ The symbols used here have following meaning:
   8. c(t) : New updated memory
 
   9. h(t) : Current output
+
+
+
+## Area of application
+ 1. Speech recognition
+ 2. Video synthesis
+ 3. Natural language processing
+ 4. Language modeling
+ 5. [Machine Translation also known as sequence to sequence learning](https://arxiv.org/pdf/1409.3215.pdf)
+ 6. [Image captioning ](https://arxiv.org/pdf/1411.4555v2.pdf)
+ 7. [Hand writing generation](https://arxiv.org/pdf/1502.04623v2.pdf)
+ 8. [Image generation using attention models](https://arxiv.org/pdf/1502.04623v2.pdf)
+ 9. [Question answering](http://www.aclweb.org/anthology/P15-2116)
+10. [Video to text](https://arxiv.org/pdf/1505.00487v3.pdf)
