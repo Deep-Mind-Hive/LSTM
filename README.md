@@ -56,7 +56,7 @@ The symbols used here have following meaning:
 
 
 
-## Area of application
+## 4. Area of application
  1. Speech recognition
  2. Video synthesis
  3. Natural language processing
@@ -67,3 +67,7 @@ The symbols used here have following meaning:
  8. [Image generation using attention models](https://arxiv.org/pdf/1502.04623v2.pdf)
  9. [Question answering](http://www.aclweb.org/anthology/P15-2116)
 10. [Video to text](https://arxiv.org/pdf/1505.00487v3.pdf)
+
+
+
+  * A quick tutorial on [LSTM](https://www.youtube.com/watch?v=9zhrxE5PQgY) 
