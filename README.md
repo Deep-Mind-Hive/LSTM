@@ -82,13 +82,29 @@ We are using keras framework to demonstrate how to build LSTM sequential network
     from keras.layers import LSTM, Dense \n
     import numpy as np
     
-2. define your data dimension, timesteps, number of classes and batch size
+2. define your maximum feature length
 
-        data_dim = 16
-        timesteps = 8
-        num_classes = 10
-        batch_size = 32
+        max_features = 1024
 
 3. Building model
-  1. create the instance of the sequential model
-  2. on that instance add a LSTM layer with 
+    1. create the instance of the sequential model
+    2. on that instance add a Embedding layer with maximum vocab size and dimention of output.
+    3. now add a layer of LSTM with 128 units.
+    4. For regularization we have to add a dropout layer with whatever percentage you want to drop.
+    5. At last we have to compile the model for taining with loss function as binary cross entropy, optimizer as rmsprop(utilizes the magnitude of recent gradients to normalize the gradients.).
+    
+            model = Sequential()
+            model.add(Embedding(max_features, output_dim=256))
+            model.add(LSTM(128))
+            model.add(Dropout(0.5))
+            model.add(Dense(1, activation='sigmoid'))
+
+            model.compile(loss='binary_crossentropy',
+                          optimizer='rmsprop',
+                          metrics=['accuracy'])
+             
+4. Training of the model
+    1. now we have to fit the data i.e X_train and Y_train into the model we have created in the step 3.
+    
+
+ml
