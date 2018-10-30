@@ -82,14 +82,14 @@ We are using keras framework to demonstrate how to build LSTM sequential network
         from keras.layers import LSTM, Dense
         import numpy as np
     
-2. define your maximum feature length
+2. Define your maximum feature length
 
         max_features = 1024
 
 3. Building model
-    1. create the instance of the sequential model
-    2. on that instance add a Embedding layer with maximum vocab size and dimention of output.
-    3. now add a layer of LSTM with 128 units.
+    1. Create the instance of the sequential model
+    2. On that instance add a Embedding layer with maximum vocab size and dimention of output.
+    3. Now add a layer of LSTM with 128 units.
     4. For regularization we have to add a dropout layer with whatever percentage you want to drop.
     5. At last we have to compile the model for taining with loss function as binary cross entropy, optimizer as rmsprop(utilizes the magnitude of recent gradients to normalize the gradients.).
     
@@ -104,10 +104,15 @@ We are using keras framework to demonstrate how to build LSTM sequential network
                           metrics=['accuracy'])
              
 4. Training of the model
-    1. now we have to fit the data i.e X_train and Y_train into the model we have created in the step 3.
+    1. Now we have to fit the data i.e X_train and Y_train into the model we have created in the step 3.
+    2. We can't pass all the input at once, it will take long time to train the model so we divide the input into batches and then train the model by passing one batch at a time. It increases the efficiency of the model.
+    3. Batch size difines that how much input data in divided into each batch.
+    4. An epoch is a measure of the number of times all of the training vectors are used once to update the weights.
+
+For batch training all of the training samples pass through the learning algorithm simultaneously in one epoch before weights are updated.
       
             model.fit(x_train, y_train, batch_size=16, epochs=10)
 
-5. At last we have to evaluate the model perfomance by camparing the predicted value and actual value.
+5. At last we have to evaluate the model perfomance by camparing the predicted value and actual value, with same batch size.
 
         score = model.evaluate(x_test, y_test, batch_size=16)
