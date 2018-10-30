@@ -78,9 +78,9 @@ We are using keras framework to demonstrate how to build LSTM sequential network
 
 1. First we have to import all the dependencies 
     
-    from keras.models import Sequential \n
-    from keras.layers import LSTM, Dense \n
-    import numpy as np
+        from keras.models import Sequential
+        from keras.layers import LSTM, Dense
+        import numpy as np
     
 2. define your maximum feature length
 
@@ -105,6 +105,9 @@ We are using keras framework to demonstrate how to build LSTM sequential network
              
 4. Training of the model
     1. now we have to fit the data i.e X_train and Y_train into the model we have created in the step 3.
-    
+      
+            model.fit(x_train, y_train, batch_size=16, epochs=10)
 
-ml
+5. At last we have to evaluate the model perfomance by camparing the predicted value and actual value.
+
+        score = model.evaluate(x_test, y_test, batch_size=16)
