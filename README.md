@@ -107,9 +107,7 @@ We are using keras framework to demonstrate how to build LSTM sequential network
     1. Now we have to fit the data i.e X_train and Y_train into the model we have created in the step 3.
     2. We can't pass all the input at once, it will take long time to train the model so we divide the input into batches and then train the model by passing one batch at a time. It increases the efficiency of the model.
     3. Batch size difines that how much input data in divided into each batch.
-    4. An epoch is a measure of the number of times all of the training vectors are used once to update the weights.
-
-For batch training all of the training samples pass through the learning algorithm simultaneously in one epoch before weights are updated.
+    4. An epoch is a measure of the number of times all of the training vectors are used once to update the weights.For batch training all of the training samples pass through the learning algorithm simultaneously in one epoch before weights are updated.
       
             model.fit(x_train, y_train, batch_size=16, epochs=10)
 
