@@ -114,3 +114,11 @@ We are using keras framework to demonstrate how to build LSTM sequential network
 5. At last we have to evaluate the model perfomance by camparing the predicted value and actual value, with same batch size.
 
         score = model.evaluate(x_test, y_test, batch_size=16)
+
+
+
+
+## Reference
+1. https://www.analyticsvidhya.com/blog/2017/12/fundamentals-of-deep-learning-introduction-to-lstm/
+2. http://colah.github.io/posts/2015-08-Understanding-LSTMs/
+3. https://towardsdatascience.com/understanding-lstm-and-its-quick-implementation-in-keras-for-sentiment-analysis-af410fd85b47
