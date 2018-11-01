@@ -122,7 +122,7 @@ We are using keras framework to demonstrate how to build LSTM sequential network
 | :--- | :--- |
 | Sample | This is the len(data_x), or the amount of data points you have. |
 | timesteps | This is equivalent to the amount of time steps you run your recurrent neural network. If you want your network to have memory of 60 characters, this number should be 60. |
-| Features | this is the amount of features in every time step. If you are processing pictures, this is the amount of pixels. In this case you seem to have 1 feature per time step. |
+| Features | this is the amount of features in every time step. If you are processing pictures, this is the amount of pixels. |
 
 
 
