@@ -9,7 +9,7 @@ train.head()
 #Dropping Page Column
 train = train.drop('Page',axis = 1)
 #Using Data From Random Row for Training and Testing
-row = train.iloc[90000,:].values
+row = train.iloc[2000,:].values
 X = row[0:549]
 y = row[1:550]
 # Splitting the dataset into the Training set and Test set
