@@ -1,9 +1,9 @@
 #Importing Libraries
 import numpy as np
 import pandas as pd
-import matplotlib.pyplot as plt
+
 #Importing dataset
-train = pd.read_csv('file_path').fillna(0)
+train = pd.read_csv('train.csv').fillna(0)
 page = train['Page']
 train.head()
 #Dropping Page Column
