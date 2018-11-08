@@ -14,6 +14,9 @@ To understand RNNs, let’s use a simple perceptron network with one hidden laye
   2. Xt : Input
   3. Ht : Output
 
+<p align="center">
+  <img src="https://cdn-images-1.medium.com/max/1600/0*WZ2tmBE5RT6vJ7d1.">
+</p>
 
 ## 1. What is LSTM?
 Long short-term memory (LSTM) units are units of a recurrent neural network (RNN). An RNN composed of LSTM units is often called an LSTM network. A common LSTM unit is composed of a cell, an input gate, an output gate and a forget gate. The cell remembers values over arbitrary time intervals and the three gates regulate the flow of information into and out of the cell.
