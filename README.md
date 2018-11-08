@@ -1,5 +1,19 @@
 # Long Short Term Memory (L.S.T.M.)
 
+## 0. What is RNNs?
+RNNs are a type of artificial neural network that are able to recognize and predict sequences of data such as text, genomes, handwriting, spoken word, or numerical time series data. They have loops that allow a consistent flow of information and can work on sequences of arbitrary lengths.
+To understand RNNs, let’s use a simple perceptron network with one hidden layer. Such a network works well with simple classification problems. As more hidden layers are added, our network will be able to inference more complex sequences in our input data and increase prediction accuracy.
+
+### RNNs structure
+<p align="center">
+  <img alt="structure" src="https://cdn-images-1.medium.com/max/1600/0*5VYw4jkvm21vcnyI.">
+</p>
+
+
+  1. A : Neural Network
+  2. Xt : Input
+  3. Ht : Output
+
 
 ## 1. What is LSTM?
 Long short-term memory (LSTM) units are units of a recurrent neural network (RNN). An RNN composed of LSTM units is often called an LSTM network. A common LSTM unit is composed of a cell, an input gate, an output gate and a forget gate. The cell remembers values over arbitrary time intervals and the three gates regulate the flow of information into and out of the cell.
